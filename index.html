@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 
+— width=device-width говорит о том, что ширина страницы будет равна 100% ширины окна любого браузера. То есть, ширина страницы сайта соответствует ширине устройства, поэтому её не надо масштабировать.
+—  initial-scale=1 говорит о том, что размер страницы в браузере будет равен 100% величины области просмотра. То есть, соотношение между физическим пикселем и css пикселем будет 1:1;
+-->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 
+цифры в тексте вида +888888888 на iOS не будут автоматом отображаться как ссылка на номер телефона и производить вызов при нажатии
+-->
+    <meta
+      name="description"
+      content="КЕРАМИКА РУЧНОЙ РАБОТЫ Ксении Шевиховой sheva-shop sheva_ceramics"
+    />
+    <!-- 
+Описание страницы
+-->
+    <meta
+      name="keywords"
+      content="КЕРАМИКА РУЧНОЙ РАБОТЫ, керамика, Ксения Шевихова, sheva-shop, sheva_ceramics"
+    />
+    <!-- 
+Ключевые слова для SEO
+-->
+    <meta name="Author" content="Андрей Шевихов" />
+    <!-- Автор страницы -->
+    <meta name="Copyright" content="Андрей Шевихов" />
+    <!-- Авторские права -->
+    <meta name="Address" content="shevi-andrej@yandex.ru" />
+    <!-- Адрес автора -->
+
+    <!--Для социальных сетей
+
+Facebook
+Что бы настроить вид нашей страницы в посте мы пишем следующие мета теги:
+локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU" />
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article" />
+    <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+    <meta property="og:title" content="КЕРАМИКА РУЧНОЙ РАБОТЫ" />
+    <!-- описание страницы -->
+    <meta
+      property="og:description"
+      content="КЕРАМИКА РУЧНОЙ РАБОТЫ Ксении Шевиховой"
+    />
+    <!-- ссылка на изображение, которое будет публиковаться в записи 
+<meta property="og:image" content="http://..../meta/img/bg.jpg">-->
+    <!-- ссылка на текущую страницу -->
+    <meta property="og:url" content="https://sheva-shop.ru " />
+    <!-- название сайта -->
+    <meta property="og:site_name" content="sheva_ceramics" />
+
+    <!-- Для создания Twitter Cards мета теги будут иметь другой вид:
+ Тип карты, по умолчанию используется summary -->
+    <meta name="twitter:card" content="summary" />
+    <!-- Имя/логин автора -->
+    <meta name="twitter:site" content="Ксения" />
+    <!-- Название страницы -->
+    <meta name="twitter:title" content="КЕРАМИКА РУЧНОЙ РАБОТЫ" />
+    <!-- Описание страницы -->
+    <meta name="twitter:description" content="про Керамику" />
+    <!-- Cсылка на изображение 
+<meta name="twitter:image" content="http://.../meta/img/bg.jpg">-->
+    <title>Sheva ceramics</title>
+    <link rel="shortcut icon" href="favicon/favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1d13b43f54.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" crossorigin src="/assets/index.7feb6a8d.js"></script>
+    <link rel="stylesheet" href="/assets/index.eb77877f.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="sidenav">
+        <div class="sidenav_container">
+          <div class="logo">
+            <a class="logo_link" href="#">
+              <img
+                class="logo_link-img"
+                src="/img/main/logo2.png"
+                alt="logo company"
+              />
+            </a>
+          </div>
+          <div class="menu-shadow"></div>
+          <div class="menu-nav">
+            <ul class="menu_list">
+              <li><a href="/index.html" class="menu_link">главная</a></li>
+              <li><a href="/shop.html" class="menu_link">магазин</a></li>
+              <li><a href="#" class="menu_link">отзывы</a></li>
+              <li>
+                <a data-goto=".page_section_contacts" href="#" class="menu_link"
+                  >контакты</a
+                >
+              </li>
+              <!-- дата атрибуты для передачи данных в js (для плавной прокрутки)-->
+              <li><a href="/cart.html" class="menu_link">ваш заказ</a></li>
+            </ul>
+          </div>
+          <button class="menu_btn">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="main">
+        <!-- посмотреть закрывающий тэг (вроде норм перед закрывающим боди)-->
+        <header class="header">
+          <h1 class="title">КЕРАМИКА РУЧНОЙ РАБОТЫ</h1>
+        </header>
+
+        <section class="content-top">
+          <h2 class="validity">content-top</h2>
+          <!-- для валидности -->
+
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 11</div>
+              <img src="/img/main/image1.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 11</div>
+              <img src="/img/main/image2.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 11</div>
+              <img src="/img/main/image3.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 11</div>
+              <img src="/img/main/image4.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 11</div>
+              <img src="/img/main/image5.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 11</div>
+              <img src="/img/main/image6.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 11</div>
+              <img src="/img/main/image7.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">8 / 11</div>
+              <img src="/img/main/image8.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">9/ 11</div>
+              <img src="/img/main/image9.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">10 / 11</div>
+              <img src="/img/main/image10.jpg" style="width: 100%" alt="" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">11 / 11</div>
+              <img src="/img/main/image11.jpg" style="width: 100%" alt="" />
+            </div>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+
+        <div class="anchor">
+          <a href="/shop.html" class="button">Порадовать себя и близких</a>
+        </div>
+
+        <section class="content-middle">
+          <h2 class="validity">content-middle</h2>
+          <!-- для валидности -->
+          <div class="content-middle-inner">
+            <img
+              class="img-content-middle-img"
+              src="/img/main/image12.jpg"
+              alt=""
+            />
+
+            <div class="description-content-middle">
+              <p class="content-middle-text">
+                Привет!
+                <br />
+                <br />
+                Я Ксения Шевихова, керамист. Очень люблю природу! Мне повезло
+                жить в удивительно красивом месте, в Красноярске - центре
+                Сибири. Тут тайга сразу за городом, как и горы.
+                <br />
+                <br />
+                Каждая чашка, тарелка, пиала - это часть тайги, Енисея и Саян. В
+                этой керамике вы увидите свежий горный воздух, зелень таежных
+                папоротников, бирюзу Енисея и охру гор и прошлогодней травы. Это
+                часть нашей земли, потому что посуда сделана из местной глины.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="anchor">
+          <a href="/shop.html" class="button">Красота здесь</a>
+        </div>
+
+        <section class="content-middle">
+          <h2 class="validity">content-middle</h2>
+          <!-- для валидности -->
+          <div class="content-middle-inner">
+            <div class="description-content-middle">
+              <p class="content-middle-text block2">
+                И вся эта причастность к сибирской природе ощущается еще лучше в
+                подарочных наборах "Частичка тайги": с керамикой и чаем из
+                сибирских трав, с запахом сосны и горного энергетика
+                сайган-дайля, с настоящими еловыми ветками, мхом и шишками в
+                коробке.
+                <br />
+                <br />
+                Этот набор создан для того, чтобы найти время для себя и
+                замедлиться, оказавшись вдруг среди леса с чашкой травяного чая.
+                И для того, чтобы радовать близких, которые не умеют отдыхать и
+                кому "ничего не надо дарить".
+              </p>
+            </div>
+            <img
+              class="img-content-middle-img"
+              src="img/main/aromat-taygi.jpg"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <div class="anchor">
+          <a href="/shop.html" class="button">Вдохнуть аромат тайги</a>
+        </div>
+
+        <section class="content-bottom">
+          <h2 class="validity">content-bottom</h2>
+          <!-- для валидности -->
+          <div class="container">
+            <div class="content-bottom_items">
+              <div class="content-bottom_item">
+                <div
+                  class="content-bottom_item-img"
+                  style="background-image: url(/img/main/image13.jpg)"
+                ></div>
+                <p class="content-bottom_item-img-text">
+                  <a class="content-bottom_item-img-text-link" href="/shop.html"
+                    >чашки
+                  </a>
+                </p>
+              </div>
+
+              <div class="content-bottom_item">
+                <div
+                  class="content-bottom_item-img"
+                  style="background-image: url(/img/main/image14.jpg)"
+                ></div>
+                <p class="content-bottom_item-img-text">
+                  <a class="content-bottom_item-img-text-link" href="/shop.html"
+                    >тарелки</a
+                  >
+                </p>
+              </div>
+
+              <div class="content-bottom_item">
+                <div
+                  class="content-bottom_item-img"
+                  style="background-image: url(/img/main/image15.jpg)"
+                ></div>
+                <p class="content-bottom_item-img-text">
+                  <a class="content-bottom_item-img-text-link" href="/shop.html"
+                    >зайцезавры</a
+                  >
+                </p>
+              </div>
+
+              <div class="content-bottom_item_footer">
+                <div class="content-bottom_item-text">
+                  <p><strong>А вдруг разобьется, керамика же!</strong></p>
+                  <br />
+                  <p>
+                    Тщательно упаковываю в несколько слоев бумаги и пупырки -
+                    просто посмотрите на видео.
+                  </p>
+                  <br />
+
+                  <p>
+                    В коробке минимум половина объема - это упаковочные
+                    материалы, поэтому керамика не касается друг друга и доходит
+                    в целости.
+                  </p>
+                  <br />
+
+                  <p>
+                    Перед отправкой трясу - если внутри хоть что-то шевелится,
+                    разворачиваю и упаковываю заново.
+                  </p>
+                  <br />
+
+                  <p><strong>А если всё-таки разбилось?</strong></p>
+                  <br />
+                  <p>
+                    Заменяю на аналогичное по стоимости наличие и высылаю за
+                    свой счёт. Или возвращаю деньги. Но пока не пригождалось.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content-bottom_item">
+                <div class="content-bottom_item-video">
+                  <div class="content-bottom_item-video_container">
+                    <!--   <div class="content-bottom_item-video_body">
+		 <div class="item">-->
+                    <div class="item_video">
+                      <video
+                        poster=""
+                        preload="metadata"
+                        controls
+                        class="video_item"
+                      >
+                        <source src="video/sea_set.webm" type="video/webm" />
+                        <source src="video/sea_set.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscribe">
+          <h2 class="subscribe-header">
+            Хотите первыми узнавать о новинках? Оставьте e-mail
+          </h2>
+          <form name="subscribe" class="subscribe-form" action="#">
+            <input
+              name="nameInput"
+              type="email"
+              class="subscribe-input subscribe-mail"
+              placeholder="e-mail"
+              autocomplete="off"
+              maxlength="30"
+              required
+            />
+            <button
+              name="nameButton"
+              type="submit"
+              class="subscribe-input subscribe-btn"
+            >
+              отправить
+            </button>
+          </form>
+        </section>
+
+        <footer class="footer page_section_contacts">
+          <!-- плавная прокрутка придет сюда по дата атрибутам  -->
+
+          <p class="footer-adress">
+            <a href="mailto:ksyu_kli@mail.ru"> my e-mail: ksyu_kli@mail.ru</a>
+          </p>
+          <div class="footer-social-media">
+            <a href="https://www.instagram.com/sheva_ceramics/">
+              <i class="footer-social-media-icon fab fa-instagram"></i
+            ></a>
+            <a href="https://vk.com/kshevaart"
+              ><i class="footer-social-media-icon fab fa-vk"></i
+            ></a>
+          </div>
+          <p class="footer-text">
+            Copyright © 2024.<br />
+            All Rights Reserved
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="/src/js/fotorama.js"></script>
+    
+  </body>
+</html>
